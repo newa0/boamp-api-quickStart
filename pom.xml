@@ -1,0 +1,176 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>fr.gouv.dila</groupId>
+  <artifactId>boamp-api-quickStart</artifactId>
+  <version>1.1</version>
+  <name>boamp-api-quickStart</name>
+  <description>Pour commencer facilement et rapidement avec l'api Boamp DILA</description>
+  
+	<dependencies>
+		
+		<dependency>
+    		<groupId>log4j</groupId>
+    		<artifactId>log4j</artifactId>
+   		 	<version>1.2.17</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-net</groupId>
+			<artifactId>commons-net</artifactId>
+			<version>3.4</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>commons-io</groupId>
+		    <artifactId>commons-io</artifactId>
+		    <version>2.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-configuration</groupId>
+			<artifactId>commons-configuration</artifactId>
+			<version>1.10</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpmime</artifactId>
+			<version>4.5.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.velocity</groupId>
+			<artifactId>velocity</artifactId>
+			<version>1.7</version>
+		</dependency>
+
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+		
+		<dependency>
+   		 <groupId>junit</groupId>
+   			 <artifactId>junit</artifactId>
+    		<version>4.12</version>
+    		<scope>test</scope>
+		</dependency>
+
+		
+	</dependencies>
+
+	<build>
+
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.3</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.jvnet.jaxb2.maven2</groupId>
+				<artifactId>maven-jaxb2-plugin</artifactId>
+				<version>0.13.1</version>
+				<executions>
+					<execution>
+						<id>v010</id>
+						<goals>	<goal>generate</goal></goals>
+						<configuration>
+							<encoding>UTF-8</encoding>
+							<extension>true</extension>
+							<schemas><schema> <url>http://schemas.journal-officiel.gouv.fr/schemabook/boamp/Boamp_v010.xsd</url></schema></schemas>		
+							<generateDirectory>src/main/gen</generateDirectory>	
+							<generatePackage>fr.gouv.api.Boamp_v010</generatePackage>
+							<forceRegenerate>true</forceRegenerate>
+						</configuration>
+					</execution>
+			
+					<execution>
+						<id>v110</id>
+						<goals>	<goal>generate</goal></goals>
+						<configuration>
+							<encoding>Windows-1252</encoding>
+							<extension>true</extension>
+							<schemas><schema> <url>http://schemas.journal-officiel.gouv.fr/schemabook/boamp/Boamp_v110.xsd</url></schema></schemas>		
+							<generateDirectory>src/main/gen</generateDirectory>	
+							<generatePackage>fr.gouv.api.Boamp_v110</generatePackage>
+							<forceRegenerate>true</forceRegenerate>
+						</configuration>
+					</execution>
+
+					<execution>
+						<id>v230</id>
+						<goals>	<goal>generate</goal></goals>
+						<configuration>
+							<encoding>UTF-8</encoding>
+							<extension>true</extension>
+							<schemas><schema><url>http://schemas.journal-officiel.gouv.fr/schemabook/boamp/Boamp_v230.xsd</url></schema></schemas>
+							
+							<bindingDirectory>src/main/resources/xml/xjb</bindingDirectory>
+							<bindingIncludes>
+								<bindingInclude>bindings_v230.xjb</bindingInclude>
+							</bindingIncludes>
+							
+							<generateDirectory>src/main/gen</generateDirectory>	
+							<generatePackage>fr.gouv.api.Boamp_v230</generatePackage>
+							<forceRegenerate>true</forceRegenerate>
+						</configuration>
+					</execution>
+					
+				</executions>
+			</plugin>
+
+
+
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>quickstart</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+						<finalName>${project.name}-${project.version}-exec</finalName>
+						<appendAssemblyId>false</appendAssemblyId>
+							<archive>
+								<manifest>
+									<mainClass>com.x.api.AppGui</mainClass>
+								</manifest>
+							</archive>
+							<descriptors>
+								<descriptor>executableJar.xml</descriptor>
+							</descriptors>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+
+
+		</plugins>
+
+	</build>
+
+</project>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jaxb:bindings xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:annox="http://annox.dev.java.net"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/jaxb http://java.sun.com/xml/ns/jaxb/bindingschema_2_0.xsd"
+	xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance"
+	version="2.1">
+
+
+	<!-- Raise theEnumMemberSizeCap limit -->
+	<jaxb:bindings>
+		<jaxb:globalBindings typesafeEnumMaxMembers="10000" />
+	</jaxb:bindings>
+	
+<!-- 
+	<jaxb:bindings schemaLocation="../schemas/Boamp_v230/Boamp_v230.xsd"
+		node="/xs:schema">
+
+		<jaxb:bindings node="xs:complexType[@name='Annonce']">
+			<inheritance:extends>fr.gouv.dila.opendata.api.model.generic.Item
+			</inheritance:extends>
+		</jaxb:bindings>
+		
+		<jaxb:bindings
+			node="xs:complexType[@name='Annonce']">
+			<annox:annotate target="field">@io.swagger.annotations.ApiModel(value="Boamp_v230")
+			</annox:annotate>
+		</jaxb:bindings>
+		
+		<jaxb:bindings node="xs:complexType[@name='Annonce']">
+        	<annox:annotate>
+            	<annox:annotate annox:class="javax.xml.bind.annotation.XmlRootElement" name="ANNONCE"/>
+        	</annox:annotate>
+    	</jaxb:bindings>
+
+		<jaxb:bindings
+			node="xs:complexType[@name='Annonce']/xs:sequence/xs:element[@name='GESTION']">
+			<annox:annotate target="field">@io.swagger.annotations.ApiModelProperty(value
+				= "commentaire sur la gestion de la classe annonce de la v2.3")
+			</annox:annotate>
+		</jaxb:bindings>
+
+	</jaxb:bindings> -->
+
+</jaxb:bindings>

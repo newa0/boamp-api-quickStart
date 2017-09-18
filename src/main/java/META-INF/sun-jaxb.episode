@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jaxb:bindings xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+  <!--
+
+Ce fichier a été généré par l'implémentation de référence JavaTM Architecture for XML Binding (JAXB), v2.2.11 
+Voir <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+Toute modification apportée à ce fichier sera perdue lors de la recompilation du schéma source. 
+Généré le : 2016.11.24 à 04:51:12 PM CET 
+
+  -->
+  <jaxb:bindings if-exists="true" scd="x-schema::">
+    <jaxb:schemaBindings map="false">
+      <jaxb:package name="fr.gouv.api.Boamp_v230"/>
+    </jaxb:schemaBindings>
+    <jaxb:bindings if-exists="true" scd="~CritereAttribution">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.CritereAttribution"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~EnumNature">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.EnumNature"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~EnumTypeProcedure">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.EnumTypeProcedure"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~ConditionParticipation">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.ConditionParticipation"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~ConditionMarche">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.ConditionMarche"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~PubAnterieure">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.PubAnterieure"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Attribution">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Attribution"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Renseignement">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Renseignement"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~AnnonceAnterieure">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.AnnonceAnterieure"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Rectification">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Rectification"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~ComplementInformation">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.ComplementInformation"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~ConditionAdministrative">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.ConditionAdministrative"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~ReferencePublication">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.ReferencePublication"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Procedure">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Procedure"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Criteres">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Criteres"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Caracteristiques">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Caracteristiques"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~AccordCadre">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.AccordCadre"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~MarcheType">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.MarcheType"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~ObjetArticle">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.ObjetArticle"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Indexation">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Indexation"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Marche">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Marche"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Annonce">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Annonce"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Gestion">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Gestion"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Reference">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Reference"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Donnees">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Donnees"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Identite">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Identite"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Contact">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Contact"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~DetailContact">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.DetailContact"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~EnumDomaine">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.EnumDomaine"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~EnumAvisImplique">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.EnumAvisImplique"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~EnumAvisCorrespondant">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.EnumAvisCorrespondant"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Lieu">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Lieu"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Delegation">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Delegation"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Option">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Option"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Reconduction">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Reconduction"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Delai">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Delai"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Lot">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Lot"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Duree">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Duree"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~NbrCandidat">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.NbrCandidat"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~PublicationPapier">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.PublicationPapier"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Modification">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Modification"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Titulaire">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Titulaire"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~ConditionDelai">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.ConditionDelai"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Annulation">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Annulation"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Rectificatif">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Rectificatif"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~ConditionQualification">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.ConditionQualification"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Adresse">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Adresse"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Avis">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Avis"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Valeur">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Valeur"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~CodeLib">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.CodeLib"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~AnnexeD1">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.AnnexeD1"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~AnnexeD2">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.AnnexeD2"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~AnnexeD3">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.AnnexeD3"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~AnnexeD4">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.AnnexeD4"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~typeOuiNon">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.TypeOuiNon"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~EnumAdjudication">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.EnumAdjudication"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~EnumEntiteAdjudicatrice">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.EnumEntiteAdjudicatrice"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~EnumCritereSociauxEtEnvironementaux">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.EnumCritereSociauxEtEnvironementaux"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~EnumNatureAdresse">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.EnumNatureAdresse"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~EnumOrganisme">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.EnumOrganisme"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~EnumPouvoirAdjudicateur">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.EnumPouvoirAdjudicateur"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~EnumFamille">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.EnumFamille"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~EnumPerimetre">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.EnumPerimetre"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~EnumStatut">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.EnumStatut"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Cpv">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Cpv"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~DureeSystemQualification">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.DureeSystemQualification"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~DureeValiditeOffre">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.DureeValiditeOffre"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~Candidature">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.Candidature"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~AvisImplique">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.AvisImplique"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~EnumAccordCadre">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.EnumAccordCadre"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~DIV_EN_LOTSType">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.DIVENLOTSType"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~EnumActivitePrincipale">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.EnumActivitePrincipale"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~ReferenceAnterieure">
+      <jaxb:class ref="fr.gouv.api.Boamp_v230.ReferenceAnterieure"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~EnumDevise">
+      <jaxb:typesafeEnumClass ref="fr.gouv.api.Boamp_v230.EnumDevise"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~EnumCodePays">
+      <jaxb:typesafeEnumClass ref="fr.gouv.api.Boamp_v230.EnumCodePays"/>
+    </jaxb:bindings>
+    <jaxb:bindings if-exists="true" scd="~EnumLangue">
+      <jaxb:typesafeEnumClass ref="fr.gouv.api.Boamp_v230.EnumLangue"/>
+    </jaxb:bindings>
+  </jaxb:bindings>
+</jaxb:bindings>

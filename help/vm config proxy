@@ -1,0 +1,5 @@
+-Dhttp.proxyHost=192.168.50.10
+-Dhttps.proxyHost=192.168.50.10
+-Dhttp.proxyPort=8080
+-Dhttp.proxyUser=<user>
+-Dhttp.proxyPassword=<password>
